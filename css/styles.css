@@ -621,6 +621,59 @@ p {
   font-weight: 900;
 }
 
+.live-booking .section-heading p:not(.eyebrow) {
+  max-width: 48rem;
+}
+
+.live-booking-panel {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(242, 24, 114, 0.2), rgba(0, 183, 176, 0.14)),
+    var(--border);
+  box-shadow: 0 22px 62px rgba(0, 0, 0, 0.28);
+}
+
+.mission-card {
+  display: grid;
+  align-content: start;
+  gap: 0.9rem;
+  min-height: 25rem;
+  padding: clamp(1.2rem, 4vw, 2rem);
+  background:
+    radial-gradient(circle at 90% 12%, rgba(255, 177, 27, 0.11), transparent 28%),
+    linear-gradient(145deg, rgba(23, 19, 29, 0.94), rgba(5, 5, 8, 0.9));
+}
+
+.panel-label {
+  margin: 0;
+  color: var(--teal);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.mission-card h3,
+.mission-card p {
+  margin: 0;
+}
+
+.mission-card .button {
+  width: fit-content;
+  margin-top: 0.4rem;
+}
+
+.booking-email {
+  width: fit-content;
+  color: var(--cream);
+  font-weight: 900;
+}
+
 .member-grid,
 .style-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -868,7 +921,8 @@ p {
 
   .about-grid,
   .music-layout,
-  .media-feature {
+  .media-feature,
+  .live-booking-panel {
     grid-template-columns: 1fr;
   }
 
@@ -910,7 +964,8 @@ p {
   .button,
   .button-row,
   .inline-action,
-  .inline-link {
+  .inline-link,
+  .mission-card .button {
     width: 100%;
   }
 
